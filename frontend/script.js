@@ -100,7 +100,7 @@ form.addEventListener('submit', async (e) => {
   btn.style.opacity = '0.7';
 
   try {
-    const res = await fetch('/api/contact', {
+    const res = await fetch('https://portfolio-backend-8j1r.onrender.com/api/contact', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -131,7 +131,7 @@ form.addEventListener('submit', async (e) => {
 // ── FETCH PROJECTS from backend ───────────────────────────
 async function loadProjects() {
   try {
-    const res = await fetch('/api/projects');
+    const res = await fetch('https://portfolio-backend-8j1r.onrender.com/api/projects');
     if (!res.ok) return;
     const projects = await res.json();
     console.log('Projects loaded from DB:', projects);
