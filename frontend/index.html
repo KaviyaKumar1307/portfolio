@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kaviya V — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <div class="nav-logo">KV<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+
+    <!-- LEFT: text content -->
+    <div class="hero-content">
+      <p class="hero-eyebrow">Hello, I'm</p>
+      <h1 class="hero-name">Kaviya<span class="pink"> V</span></h1>
+      <!-- Typewriter tagline -->
+      <p class="hero-tagline">
+        <span id="typewriter"></span><span class="cursor">|</span>
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-outline">Contact Me</a>
+      </div>
+      <div class="hero-scroll-hint">scroll down ↓</div>
+    </div>
+
+    <!-- RIGHT: profile image popup -->
+    <div class="hero-image-wrap" id="heroImage">
+    <div class="hero-image-ring">
+        <img src="images/portfolioimage.jpg" alt="Kaviya V" class="hero-photo"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="hero-photo-fallback">KV</div>
+    </div>
+    <div class="hero-image-glow"></div>
+</div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="section-label">01 — About</p>
+      <h2 class="section-title">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-avatar">
+          <div class="avatar-ring">
+            <img src="images/portfolioimage.jpg" alt="Kaviya V" class="about-photo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="avatar-inner">KV</div>
+          </div>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-num">8.63</span><span class="stat-label">CGPA</span></div>
+            <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Projects</span></div>
+            <div class="stat"><span class="stat-num">7+</span><span class="stat-label">Certifications</span></div>
+          </div>
+        </div>
+        <div class="about-text">
+          <p>CSE student at RMK College of Engineering and Technology (2023–2027), passionate about building real-world web apps and also in cloud computing.</p>
+          <p>Completed my internship at CAD DESK as a web developer. I am also a Runner-Up in the SCI Hackathon.</p>
+          <div class="about-langs">
+            <span class="lang-pill">English</span>
+            <span class="lang-pill">Tamil</span>
+            <span class="lang-pill">Japanese</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <p class="section-label">02 — Skills</p>
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">&#60;/&#62;</div>
+          <h3>Languages</h3>
+          <div class="skill-tags"><span>Java</span></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">&#127760;</div>
+          <h3>Web Technologies</h3>
+          <div class="skill-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            <span>React.js</span><span>Tailwind CSS</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">&#128200;</div>
+          <h3>Backend</h3>
+          <div class="skill-tags">
+            <span>Node.js</span><span>Express.js</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">&#128436;</div>
+          <h3>Databases</h3>
+          <div class="skill-tags"><span>MySQL</span><span>MongoDB</span></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">&#9881;</div>
+          <h3>Tools</h3>
+          <div class="skill-tags"><span>Git</span><span>GitHub</span></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">&#9729;</div>
+          <h3>Domain</h3>
+          <div class="skill-tags"><span>Cloud Computing</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <p class="section-label">03 — Projects</p>
+      <h2 class="section-title">What I've Built</h2>
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-tag">Featured Project</div>
+          <h3 class="project-title">Prescripto</h3>
+          <p class="project-desc">A responsive doctor appointment booking web application with user authentication, doctor browsing, appointment booking &amp; cancellation, profile management, and payment status handling.</p>
+          <div class="project-tech">
+            <span>React.js</span><span>Tailwind CSS</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/KaviyaKumar1307/doctor-appointment-booking-system" class="project-link">GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-tag">Personal Project</div>
+          <h3 class="project-title">Employee Management System</h3>
+          <p class="project-desc">A web app to efficiently manage employee records. Features include add, view, update, and delete employee details through a user-friendly interface.</p>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/KaviyaKumar1307/employee-management-system" class="project-link">GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-tag">Internship Project</div>
+          <h3 class="project-title">Task Management System</h3>
+          <p class="project-desc">Built during internship at CAD DESK. A task management system with features to add, update, and delete tasks with a clean interface.</p>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/KaviyaKumar1307/todo-app" class="project-link">GitHub →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section section-dark" id="education">
+    <div class="container">
+      <p class="section-label">04 — Education</p>
+      <h2 class="section-title">Academic Background</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2023 – 2027</span>
+            <h3>B.E Computer Science &amp; Engineering</h3>
+            <p>RMK College of Engineering and Technology</p>
+            <span class="timeline-grade">CGPA: 8.63</span>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2022 – 2023</span>
+            <h3>12th — Higher Secondary</h3>
+            <p>St. Mary's Mat. Hr. Sec. School · State Board, Tamil Nadu</p>
+            <span class="timeline-grade">Percentage: 90.3%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="certs-section">
+        <h3 class="certs-title">Certifications</h3>
+        <div class="certs-grid">
+          <div class="cert-pill">AWS Course</div>
+          <div class="cert-pill">Deloitte — Data Analyst</div>
+          <div class="cert-pill">Cloud Foundations</div>
+          <div class="cert-pill">Oracle Certified AI Foundations</div>
+          <div class="cert-pill">NPTEL Certifications</div>
+          <div class="cert-pill">Infosys Springboard — Java</div>
+          <div class="cert-pill">MongoDB Certification</div>
+        </div>
+      </div>
+
+      <div class="achievement-banner">
+        <span class="trophy">&#127942;</span>
+        <div>
+          <p class="achievement-label">Achievement</p>
+          <p class="achievement-title">SCI Hackathon — Runner Up</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERNSHIP -->
+  <section class="section" id="internship">
+    <div class="container">
+      <p class="section-label">05 — Experience</p>
+      <h2 class="section-title">Internship</h2>
+      <div class="intern-card">
+        <div class="intern-header">
+          <div>
+            <h3 class="intern-company">CAD DESK</h3>
+            <p class="intern-role">Web Developer Intern</p>
+          </div>
+          <span class="intern-badge">Completed</span>
+        </div>
+        <p class="intern-desc">Developed a Task Management System with complete CRUD functionality — add, update, and delete tasks through a clean, user-friendly interface using HTML, CSS, and JavaScript.</p>
+        <div class="intern-tech">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <p class="section-label">06 — Contact</p>
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="contact-sub">I'm open to opportunities, collaborations, and interesting projects.</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <a href="mailto:kaviyakumar569@gmail.com" class="contact-item">
+            <span class="contact-icon">✉</span>
+            <span>kaviyakumar569@gmail.com</span>
+          </a>
+          <a href="tel:9025664266" class="contact-item">
+            <span class="contact-icon">&#9742;</span>
+            <span>9025664266</span>
+          </a>
+        <a href="https://www.linkedin.com/in/kaviya-v-27775536b/" target="_blank" class="contact-item">
+    <span class="contact-icon">in</span>
+    <span>LinkedIn</span>
+</a>
+
+<a href="https://github.com/KaviyaKumar1307/" target="_blank" class="contact-item">
+    <span class="contact-icon">&#9651;</span>
+    <span>GitHub</span>
+</a>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
